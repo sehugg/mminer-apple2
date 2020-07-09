@@ -142,7 +142,7 @@ endif
 # Presume the C and asm source files to be located in the subdirectory 'src'.
 # Set SRCDIR to override.
 ifeq ($(SRCDIR),)
-  SRCDIR := src
+  SRCDIR := .
 endif
 
 # Presume the object and dependency files to be located in the subdirectory
