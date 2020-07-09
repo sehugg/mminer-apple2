@@ -1,6 +1,8 @@
 # Manic Miner
  Remake of the ZX Spectrum game for the Apple II.
 
+[Open this project in 8bitworkshop](http://8bitworkshop.com/redir.html?platform=apple2&githubURL=https%3A%2F%2Fgithub.com%2Fsehugg%2Fmminer-apple2&file=mminer.s).
+
 1. INTRODUCTION
 
 This is a game I have always loved, from the moment I saw it in a computer shop
