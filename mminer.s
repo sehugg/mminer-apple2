@@ -5,6 +5,21 @@
 ; Stefan Wessels, 2020
 ; This is free and unencumbered software released into the public domain.
 
+
+;#resource "logo.hgr"
+;#resource "mminer.cfg"
+;#define CFGFILE mminer.cfg
+
+.segment "LOWMEM"
+; from loader, switch to hi-res and start game
+        bit     TXTCLR
+        bit     MIXCLR
+        bit     HISCR
+        bit     HIRES
+        jmp	main
+; fill out rest of $800 page
+        .res	$900 - $812
+
 ;-----------------------------------------------------------------------------
 .segment "CODE"
 
@@ -37,6 +52,7 @@ quit:
 ;-----------------------------------------------------------------------------
 .include "apple2.inc"                           ; cc65 include file for LOWSCR, etc
 .include "logo.inc"                             ; loading bitmap, manic miner bouncy text
+;#resource "logo.hgr"
 .include "defs.inc"                             ; globally used defines
 .include "variables.inc"                        ; all game variables and buffers
 .include "roaudio.inc"                          ; all ro files read only.  This music and sfx
